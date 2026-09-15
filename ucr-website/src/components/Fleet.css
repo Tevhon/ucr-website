@@ -1,0 +1,93 @@
+.fleet__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 34px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fleet__search {
+  flex: 1;
+  min-width: 240px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1.5px solid var(--line);
+  border-radius: 999px;
+  padding: 12px 18px;
+  background: var(--bg);
+}
+
+.fleet__search input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 15px;
+  font-family: inherit;
+  background: transparent;
+}
+
+.fleet__filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.fleet__filter select {
+  border: 1.5px solid var(--line);
+  border-radius: 999px;
+  padding: 11px 16px;
+  font-size: 13.5px;
+  font-weight: 600;
+  font-family: inherit;
+  background: var(--bg);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.fleet__chip {
+  border: 1.5px solid var(--line);
+  border-radius: 999px;
+  padding: 11px 16px;
+  font-size: 13.5px;
+  font-weight: 700;
+  background: var(--bg);
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.fleet__chip.is-active {
+  background: var(--yellow);
+  border-color: var(--yellow);
+}
+
+.fleet__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 22px;
+}
+
+.fleet__empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--ink-soft);
+  border: 1px dashed var(--line);
+  border-radius: var(--radius-md);
+}
+
+@media (max-width: 640px) {
+  .fleet__controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .fleet__filters {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 4px;
+  }
+  .fleet__filter select,
+  .fleet__chip {
+    white-space: nowrap;
+  }
+}

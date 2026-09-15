@@ -1,0 +1,56 @@
+.legal__tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 30px;
+}
+
+.legal__tabs button {
+  border: none;
+  background: none;
+  padding: 12px 6px;
+  margin-right: 18px;
+  font-weight: 700;
+  font-size: 14.5px;
+  color: var(--ink-faint);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+}
+
+.legal__tabs button.is-active {
+  color: var(--ink);
+  border-bottom-color: var(--yellow-deep);
+}
+
+.legal__panel h2 {
+  font-size: 26px;
+}
+
+.legal__note {
+  margin-top: 14px;
+  color: var(--ink-soft);
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 680px;
+}
+
+.legal__list {
+  margin-top: 24px;
+  display: grid;
+  gap: 16px;
+}
+
+.legal__list dt {
+  font-weight: 700;
+  font-size: 14.5px;
+}
+
+.legal__list dd {
+  margin: 4px 0 0;
+  color: var(--ink-soft);
+  font-size: 14px;
+  line-height: 1.55;
+  max-width: 680px;
+}

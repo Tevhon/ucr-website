@@ -1,0 +1,51 @@
+.how__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.how__step {
+  position: relative;
+  padding: 26px 22px 24px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--bg);
+}
+
+.how__num {
+  font-family: var(--font-display);
+  font-size: 34px;
+  color: var(--yellow-deep);
+  font-weight: 600;
+  display: block;
+}
+
+.how__icon {
+  display: block;
+  font-size: 26px;
+  margin: 10px 0 14px;
+}
+
+.how__step h3 {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.how__step p {
+  margin-top: 8px;
+  font-size: 14.5px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .how__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .how__grid {
+    grid-template-columns: 1fr;
+  }
+}

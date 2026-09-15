@@ -1,0 +1,51 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-family: var(--font-display);
+  color: var(--ink);
+}
+
+.logo--light {
+  color: #fff;
+}
+
+.logo__mark {
+  display: inline-flex;
+  font-size: 34px;
+  line-height: 1;
+}
+
+.logo--sm .logo__mark {
+  font-size: 28px;
+}
+
+.logo__badge {
+  fill: var(--ink);
+}
+
+.logo--light .logo__badge {
+  fill: #fff;
+}
+
+.logo__car {
+  fill: var(--yellow);
+}
+
+.logo__wheel {
+  fill: var(--ink);
+}
+
+.logo--light .logo__wheel {
+  fill: #fff;
+}
+
+.logo__text strong {
+  font-size: 21px;
+  letter-spacing: 0.01em;
+  font-weight: 700;
+}
+
+.logo--sm .logo__text strong {
+  font-size: 18px;
+}

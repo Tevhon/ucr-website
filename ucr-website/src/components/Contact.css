@@ -1,0 +1,60 @@
+.contact {
+  background: var(--ink);
+  color: #fff;
+  border-radius: var(--radius-lg);
+  margin: 0 auto 0;
+  max-width: calc(var(--max-width) + 48px);
+}
+
+.contact__inner {
+  text-align: center;
+  max-width: 480px;
+}
+
+.contact h2 {
+  color: #fff;
+  font-size: clamp(26px, 4vw, 34px);
+}
+
+.contact__name {
+  margin-top: 16px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.contact__location,
+.contact__phone {
+  margin-top: 4px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+}
+
+.contact__actions {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.contact .btn-outline {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #fff;
+}
+
+.contact .btn-outline:hover {
+  background: #fff;
+  color: var(--ink);
+}
+
+@media (max-width: 640px) {
+  .contact {
+    border-radius: 0;
+  }
+  .contact__actions {
+    flex-direction: column;
+  }
+  .contact__actions .btn {
+    width: 100%;
+  }
+}
